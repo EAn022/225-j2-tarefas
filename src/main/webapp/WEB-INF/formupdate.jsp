@@ -8,11 +8,12 @@
     <title>Forms</title>
 </head>
 <body>
-    <h1>Nova tarefa</h1>
-    <form action="/tarefas/insert" method="post">
+    <h1>Atualizar tarefa</h1>
+    <form action="/tarefas/update" method="post">
+        <input type="hidden" name="id" value="${tarefa.id}">
         <label for="">Descricao</label>
-        <input type="text" name="descricao">
-        <button type="submit">Enviar</button>
+        <input type="text" name="descricao" value="${tarefa.descricao}">
+        <button type="submit">Salvar</button>
     </form>
 
 </body>

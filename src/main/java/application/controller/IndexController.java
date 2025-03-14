@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class IndexController {
-    @RequestMapping("/")   // rota raiz
-    public String home(){
-        return "index";
-    }
+    // @RequestMapping("/")   // rota raiz
+    // public String home(){
+    //     return "index";
+    // }
 
     @RequestMapping("/mensagem")
     public String mensagem(@RequestParam int opcao, Model ui){
